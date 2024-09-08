@@ -64,7 +64,12 @@ html {
   animation: shake 0.5s ease-in-out;
 }
 
-/* Happy Balloon */
+
+/* ========================= */
+
+
+
+/* Happy Birthday Balloon */
 .happy-balloon-box {
   position: absolute;
   width: 100%; 
@@ -78,7 +83,7 @@ html {
   width: 200px;
   height: 200px; 
   position: absolute;
-  bottom: 100px;
+  bottom: -50px;
   opacity: 0;
 }
 
@@ -87,7 +92,7 @@ html {
   opacity: 1; 
 }
 
-/* slide-up animation for Happy Balloon */
+/* slide-up animation for Happy Birthday Balloon */
 @keyframes slide-up {
   0% {
     bottom: 0;
@@ -103,6 +108,9 @@ html {
 }
 
 
+/* ====================== */
+
+
 /*  Balloons */
 .balloons {
   position: relative;
@@ -111,8 +119,8 @@ html {
 
 .balloon {
   position: absolute;
-  bottom: -50px;
-  right: 100px;
+  bottom: -450px;
+  right: 50px;
   width: 100px;
   height: auto;
   animation: slideUp 20s infinite forwards;
@@ -141,27 +149,20 @@ html {
   animation-delay: 1.25s;
 }
 .balloon5 {
-  --x: -300px;
-  --xx:100px;
+  --x: -100px;
+  --xx:200px;
   animation-delay: 1.5s;
 }
 .balloon6 {
-  --x: 600px;
-  --xx:-300px;
+  --x: -300px;
+  --xx:500px;
+  animation-delay: 1.75s;
+}
+.balloon7 {
+  --x: 400px;
+  --xx:600px;
   animation-delay: 2s;
 }
-
-.balloon7 {
-  --x: -900px;
-  --xx:-700px;
-  animation-delay: 2.5s;
-}
-.balloon8 {
-  --x: 700px;
-  --xx:400px;
-  animation-delay: 2.8s;
-}
-
 
 /* animation for all balloons */
 @keyframes slideUp {
@@ -177,3 +178,5 @@ html {
     transform: scale(1.5) translateX(var(--xx));
   }
 }
+
+
